@@ -1,0 +1,255 @@
+:root {
+    --blanco:#ffffff; 
+    --oscuro: #212121;
+    --primario: #7dcea0;
+    --secundario: #5dade2;
+    --gris:  #757575;
+    --grisClaro: #dfe9fe;
+
+}
+
+/* Tipografias */
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 { 
+    font-size: 3.8rem;
+    color: var(--oscuro);
+    font-family: arial;
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-family: arial;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-family: arial;
+    color: var(--gris);
+}
+
+/* TITULOS */
+
+.titulo span {
+    font-size: 2rem;
+    color: var(--primario); 
+}
+
+.navegacion {
+    
+    background-color: var(--secundario);
+    padding: 1rem;
+    font-family: arial;
+}
+
+.navegacion-principal {
+    text-align: center;
+    display: inline;
+    flex-direction: column;
+}
+
+@media (min-width: 480px) {
+    display: flex;
+    flex-direction: row;
+
+} 
+
+.navegacion-principal a{
+    display: inline;
+    text-align: center;
+    color: var(--blanco);
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold; 
+    text-decoration: none; 
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+} 
+
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    border: none;
+    text-align: center;
+    border-radius: 5rem;
+}
+
+.contenedor {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+@media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto auto 20rem;
+    column-gap: 1rem;
+}
+
+.fondo {
+    background-image: url(img/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    position: relative;
+    margin-bottom: 0.3rem;
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fondo1 {
+    background-color: var(--blanco);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    position: relative;
+    margin-bottom: 0.3rem;;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eaecee;
+}
+
+.fondo1 p {
+    color: var(--blanco);
+    text-align: center;
+    flex-direction: column;
+}
+
+.fondo1 h3 {
+    color: var(--gris);
+    font-weight: 100%;
+    font-family: arial;
+}
+
+/*FORMULARIO*/
+
+.formulario {
+    background-color: var(--gris);
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.formulario legend {
+    font-size:1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: var(--primario);
+}
+
+@media (min-width: 768px) {
+    .campos {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto auto 20rem;
+        column-gap: 1rem;
+    }
+    .campo1:nth-child(3), 
+    .campo1:nth-child(4){
+
+    grid-column: 1/3;
+    }
+}
+
+.campo1{
+    margin-bottom: 1rem;
+}
+
+.campo1 label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;   
+}
+
+.input-text {
+    width: 99%;
+    border: none;
+    padding: 0.5rem;
+    border-radius: .5rem;
+}
+
+.input-text-enviar {
+    background-color: var(--secundario);
+    width: 99%;
+    border: none;
+    padding: 0.5rem;
+    border-radius: .5rem;
+}
+.campo1 textarea {
+    height: 10rem;
+}
+
+@media (min-width: 768px)  {
+    .datos1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 25rem;
+    }
+}
+.centro-dp{
+    display: flex;
+    flex-direction: column;
+    column-gap: center;
+    
+}
+.centro-dp h4{
+    color: var(--secundario);
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial;
+}
+.centro-dp p{
+    line-height: 2;
+    text-align: center;
+    color: var(--oscuro);
+}
+
+
+@media (min-width: 768px)  {
+    .formacion{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+}
+.centro{
+    display: flex;
+    flex-direction: column;
+    column-gap: center;
+    
+}
+.centro h4{
+    color: var(--secundario);
+    font-weight: bold;
+    text-align: center;
+    font-family: arial;
+}
+.centro p{
+    line-height: 2;
+    text-align: center;
+}
+.foto{
+    border-radius: 8rem;
+    align-items: center;
+}
